@@ -3,7 +3,16 @@ import Coffee from "./Coffee";
 
 function CoffeeList() {
   return (
-    <Coffee />
+  <React.Fragment>
+    <Coffee 
+      roast="Dark"
+      origin="Brazil"
+      stock="120" />
+    <Coffee
+      rost="medium"
+      origin="columbia"
+      stock="120" />
+  </React.Fragment>
   );
 }
 
