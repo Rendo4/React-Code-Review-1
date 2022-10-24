@@ -5,10 +5,12 @@ import Header from "./Header";
 function Coffee(props) {
   return (
     <React.Fragment>
-      <h1>{props.roast}</h1>
-      <h3>{props.origin}</h3>
-      <p><em>Current stock: {props.stock}lbs</em></p>
-      <hr/>
+      <div onClick= {() => props.whenCoffeeClicked(props.id)}>
+        <h1>{props.roast}</h1>
+        <h3>{props.origin}</h3>
+        <p><em>Current stock: {props.stock}lbs</em></p>
+        <hr/>
+      </div>
     </React.Fragment>
   );
 }
@@ -16,7 +18,9 @@ function Coffee(props) {
 Coffee.propTypes = {
   roast: PropTypes.string,
   origin: PropTypes.string,
-  stock: PropTypes.string
+  stock: PropTypes.string,
+  id: PropTypes.string,
+  whenCoffeeClicked: PropTypes.func
 };
 
 export default Coffee;
