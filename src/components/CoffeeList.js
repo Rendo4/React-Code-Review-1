@@ -1,17 +1,29 @@
 import React from "react";
 import Coffee from "./Coffee";
 
+const mainCoffeeList = [
+  {
+    roast: "Dark",
+    origin: "Brazil",
+    stock: "120"
+  },
+  {
+    roast: "Medium",
+    origin: "Columbia",
+    stock: "120"
+  }
+  ];
+
 function CoffeeList() {
   return (
   <React.Fragment>
-    <Coffee 
-      roast="Dark"
-      origin="Brazil"
-      stock="120" />
-    <Coffee
-      rost="medium"
-      origin="columbia"
-      stock="120" />
+    <hr/>
+    {mainCoffeeList.map((coffee, index) =>
+    <Coffee roast={coffee.roast}
+    origin={coffee.origin}
+    stock={coffee.stock}
+    key={index}/>
+    )}
   </React.Fragment>
   );
 }

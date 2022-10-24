@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Header from "./Header";
 
-function Coffee() {
+function Coffee(props) {
   return (
     <React.Fragment>
-      <Header />
       <h1>{props.roast}</h1>
       <h3>{props.origin}</h3>
       <p><em>Current stock: {props.stock}lbs</em></p>
