@@ -7,13 +7,15 @@ function CoffeeDetail(props) {
       <h1> Coffee Detail</h1>
       <h3>{coffee.origin} - {coffee.roast}</h3>
       <p>{cofee.stock}</p>
+      <button onClick={()=> onClickingDelete(coffee.id) }>Delete Coffee</button>
       <hr/>
     </React.Fragment>
   );
 }
 
 CoffeeDetail.propTypes = {
-  coffee: propTypes.object
+  coffee: PropTypes.object,
+  onClickingDelete: PropTypes.func
 }
 
 export default CoffeeDetail;
