@@ -1,24 +1,12 @@
 import React from "react";
 import Coffee from "./Coffee";
+import PropTypes from "prop-types";
 
-const mainCoffeeList = [
-  {
-    roast: "Dark",
-    origin: "Brazil",
-    stock: "120"
-  },
-  {
-    roast: "Medium",
-    origin: "Columbia",
-    stock: "120"
-  }
-  ];
-
-function CoffeeList() {
+function CoffeeList(props) {
   return (
   <React.Fragment>
     <hr/>
-    {mainCoffeeList.map((coffee, index) =>
+    {props.mainCoffeeList.map((coffee, index) =>
     <Coffee roast={coffee.roast}
     origin={coffee.origin}
     stock={coffee.stock}
@@ -28,4 +16,8 @@ function CoffeeList() {
   );
 }
 
-  export default CoffeeList;
+CoffeeList.PropTypes = {
+  PropTypes: PropTypes.array
+};
+
+export default CoffeeList;

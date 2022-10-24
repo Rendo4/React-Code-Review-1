@@ -1,14 +1,18 @@
 import React from "react";
+import { v4 } from "uuid";
 
 function NewCoffeeForm(props){
 
   function handleNewCoffeeFormSubmission(event) {
     event.preventDefault();
-    console.log(event.target.roast.value);
-    console.log(event.targert.origin.value);
-    console.log(event.target.stock.value);
+    props.onNewCoffeeCreation({
+      roast: event.target.roast.value,
+      origin: event.target.origin.value,
+      stock: event.target.stock.value,
+      id: v4()
+    });
   }
-  
+
   return (
     <React.Fragment>
       <form onSubmit={handleNewCoffeeFormSubmission}>
@@ -28,6 +32,10 @@ function NewCoffeeForm(props){
       </form>
     </React.Fragment>
   );
+}
+
+NewCoffeeForm.PropTypes = {
+  onNewCoffeeCreation: PropTypes.func
 }
 
 export default NewCoffeeForm;
