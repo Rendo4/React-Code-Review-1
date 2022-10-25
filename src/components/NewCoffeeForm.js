@@ -1,5 +1,6 @@
 import React from "react";
 import { v4 } from "uuid";
+import ResuableForm from "./ReusableForm";
 
 function NewCoffeeForm(props){
 
@@ -15,21 +16,9 @@ function NewCoffeeForm(props){
 
   return (
     <React.Fragment>
-      <form onSubmit={handleNewCoffeeFormSubmission}>
-        <input
-        type="text"
-        name="roast"
-        placeholder="Type of coffee roast" />
-        <input
-        type="text"
-        name="origin"
-        placeholder="Where is the coffee from" />
-        <input
-        type="text"
-        name="stock"
-        placeholder="How many lbs is the bag you're entering" />
-        <button type="submit">Add to Inventory</button>
-      </form>
+     <ResuableForm
+     formSubmissionHandler={handleNewCoffeeFormSubmission}
+     buttonText="Add Coffee" />
     </React.Fragment>
   );
 }
