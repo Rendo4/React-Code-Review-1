@@ -14,7 +14,8 @@ function ResuableForm(props) {
         name="origin"
         placeholder="Where is the coffee from?" />
         <input
-        type="text"
+        type="number"
+        min="0"
         name="stock"
         placeholder="How many lbs of stock do you have" />
       </form>

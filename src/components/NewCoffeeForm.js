@@ -9,7 +9,7 @@ function NewCoffeeForm(props){
     props.onNewCoffeeCreation({
       roast: event.target.roast.value,
       origin: event.target.origin.value,
-      stock: event.target.stock.value,
+      stock: parseInt(event.target.stock.value),
       id: v4()
     });
   }
