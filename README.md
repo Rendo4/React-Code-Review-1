@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Cafe Inventory Tracker#
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### _My first React project at Epicodus. It lets me practice passing props in a component tree while managine state slices. ._
 
-## Available Scripts
+#### By _**Ryan Rendon**_
 
-In the project directory, you can run:
+## Technologies Used
 
-### `npm start`
+* _Node Package Manager_
+* _Javascript_
+* _HTML_
+* _React_
+* _create-react-app_
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Description
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+_In this project you can add different kinds of coffee or inventory at a local cafe to see many lbs of coffee beans you have and easy button to minus 1lb when you sell a cup_
+<img src="./Coffee-Shop.drawio.png">
+## Setup/Installation Requirements
 
-### `npm test`
+* You can visit my github Rendo4 or you can copy this link to my repository _
+* _open your terminal_
+* _use the command "cd desktop"_
+* _use the command "git clone _
+* _It should now be on your desktop!_ 
+* _In your terminal cd desktop/coffee-shop_
+* _use the command "npm install_
+* _use the command "npm run start"
+## Known Bugs
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* _If you encounter a complie error open the package.json folder and save the folder. It will recomple correctly_
 
-### `npm run build`
+## License
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Copyright 2022 Ryan Rendon
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    http://www.apache.org/licenses/LICENSE-2.0
 
-### `npm run eject`
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact Information
+_{Rendon.S.Ryan@gmail.com}_
