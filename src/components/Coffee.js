@@ -11,6 +11,7 @@ function Coffee(props) {
         <p><em>Current stock: {props.stock}lbs/ 130lbs</em></p>
         <hr/>
       </div>
+      <button onClick={() => props.whenSellClicked(props.id)}>Sell a cup!</button>
     </React.Fragment>
   );
 }
@@ -20,7 +21,8 @@ Coffee.propTypes = {
   origin: PropTypes.string,
   stock: PropTypes.number,
   id: PropTypes.string,
-  whenCoffeeClicked: PropTypes.func
+  whenCoffeeClicked: PropTypes.func,
+  whenSellClicked: PropTypes.func
 };
 
 export default Coffee;

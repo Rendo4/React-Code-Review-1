@@ -16,14 +16,16 @@ function ResuableForm(props) {
         <input
         type="number"
         min="0"
+        max="130"
         name="stock"
         placeholder="How many lbs of stock do you have" />
+        <button type="submit">{props.buttonText}</button>
       </form>
     </React.Fragment>
   );
 }
 
-ResuableForm.PropTypes = {
+ResuableForm.propTypes = {
   formSubmissionHandler: PropTypes.func,
   buttonText: PropTypes.string
 }

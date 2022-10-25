@@ -6,22 +6,24 @@ function CoffeeList(props) {
   return (
   <React.Fragment>
     <hr/>
-    {props.mainCoffeeList.map((coffee) =>
+    {props.coffeeList.map((coffee) =>
     <Coffee 
-    whenCoffeeClicked = { props.onCoffeeSelection }
-    roast={coffee.roast}
-    origin={coffee.origin}
-    stock={coffee.stock}
-    id={coffee.id}
-    key={coffee.id}/>
+      whenCoffeeClicked = { props.onCoffeeSelection }
+      whenSellClicked = {props.onCoffeeSell }
+      roast={coffee.roast}
+      origin={coffee.origin}
+      stock={coffee.stock}
+      id={coffee.id}
+      key={coffee.id}/>
     )}
   </React.Fragment>
   );
 }
 
-CoffeeList.PropTypes = {
-  PropTypes: PropTypes.array,
-  onCoffeeSelection: PropTypes.func
+CoffeeList.propTypes = {
+  coffeeList: PropTypes.array,
+  onCoffeeSelection: PropTypes.func,
+  onCoffeeSell: PropTypes.func
 };
 
 export default CoffeeList;

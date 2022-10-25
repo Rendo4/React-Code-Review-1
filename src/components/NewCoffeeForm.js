@@ -1,5 +1,6 @@
 import React from "react";
 import { v4 } from "uuid";
+import PropTypes from "prop-types";
 import ResuableForm from "./ReusableForm";
 
 function NewCoffeeForm(props){
@@ -23,7 +24,7 @@ function NewCoffeeForm(props){
   );
 }
 
-NewCoffeeForm.PropTypes = {
+NewCoffeeForm.propTypes = {
   onNewCoffeeCreation: PropTypes.func
 }
 
