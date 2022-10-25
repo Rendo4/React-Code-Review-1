@@ -7,7 +7,7 @@ function EditCoffeeForm (props) {
 
   function handleEditCoffeeFormSubmission(event) {
     event.preventDefault();
-    props.onEditCoffee({ roast: event.target.roast.value, origin: event.target.origin.value, stock: parseInt(event.target.stock.value), id: coffee.id});
+    props.onEditCoffee({ roast: event.target.roast.value, origin: event.target.origin.value, price: parseInt(event.target.price.value), stock: parseInt(event.target.stock.value), id: coffee.id});
   }
   return (
     <React.Fragment>

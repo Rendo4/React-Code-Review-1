@@ -14,6 +14,11 @@ function ResuableForm(props) {
         name="origin"
         placeholder="Where is the coffee from?" />
         <input
+        tpye="number"
+        min="0"
+        name="price"
+        placeholder="How much does it cost" />
+        <input
         type="number"
         min="0"
         max="130"

@@ -10,6 +10,7 @@ function NewCoffeeForm(props){
     props.onNewCoffeeCreation({
       roast: event.target.roast.value,
       origin: event.target.origin.value,
+      price: event.target.price.value,
       stock: parseInt(event.target.stock.value),
       id: v4()
     });
